@@ -2,6 +2,7 @@ import  mongoose  from "mongoose";
 
 const Schema = mongoose.Schema;
 
+
 const pacientSchema = new Schema ({
     name: {
         type: String,
@@ -19,10 +20,10 @@ const pacientSchema = new Schema ({
         type: String,
         required: [true, 'Phone number is required.'],
         validate: {
-            validator: function (v) {
-                return /\d{2} 9\d{4}-\d{4}/.test(v);
+            validator: function (value: string) {
+                return /\d{2} 9\d{4}-\d{4}/.test(value);
             },
-            message: props =>
+            message: (props: {value: string}) =>
              `${props.value} This is not a valid phone value. Please use the following format 99 91234-4567`
         }
     },
