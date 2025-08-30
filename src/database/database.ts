@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 
-mongoose.connect(process.env.MONGO_URI || "mongodb://admin:admin123@localhost:27027/meubanco?authSource=admin")
+mongoose.connect(process.env.MONGO_URI || "mongodb://admin:admin123@localhost:27018/meubanco?authSource=admin")
 
 const db = mongoose.connection;
 

@@ -1,5 +1,5 @@
-import appointment from "../models/appointment.ts";
-import { Appointment } from "../interfaces/appointment.ts";
+import appointment from "../models/appointment";
+import { Appointment } from "../interfaces/appointment";
 
 const getAllAppointments = async () =>{
     return await appointment.find();

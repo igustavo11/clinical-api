@@ -1,5 +1,5 @@
-import { Pacient } from "../interfaces/pacient.ts";
-import pacientRepository from "../repositores/pacientRepository.ts";
+import { Pacient } from "../interfaces/pacient";
+import pacientRepository from "../repositores/pacientRepository";
 
 const getAllPacients = async () =>{
     return await pacientRepository.getAllPacients();

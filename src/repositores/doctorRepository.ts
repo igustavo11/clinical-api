@@ -1,5 +1,5 @@
-import doctor from "../models/doctor.ts";
-import { Doctor } from "../interfaces/doctor.ts";
+import doctor from "../models/doctor";
+import { Doctor } from "../interfaces/doctor";
 
 const getAllDoctors = async () =>{
     try{
