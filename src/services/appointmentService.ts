@@ -1,5 +1,5 @@
-import appointmentsRepository from "../repositores/appointmentRepository.ts";
-import { Appointment } from "../interfaces/appointment.ts";
+import appointmentsRepository from "../repositores/appointmentRepository";
+import { Appointment } from "../interfaces/appointment";
 
 const getAllAppointments = async () =>{
     return await appointmentsRepository.getAllAppointments();

@@ -1,10 +1,11 @@
-import  mongoose  from "mongoose";
+import mongoose from "mongoose";
 
 const Schema = mongoose.Schema;
 
-const prescriptionSchema = new Schema ({
+const prescriptionSchema = new Schema({
     date: {
-        type: Date
+        type: Date,
+        required: [true, 'Date is required.']
     },
     appointmentId: {
         type: String,
@@ -28,8 +29,7 @@ const prescriptionSchema = new Schema ({
     file: {
         type: String
     }
-}
-);
+});
 
 const prescription = mongoose.model('Prescription', prescriptionSchema);
 

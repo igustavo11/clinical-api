@@ -3,7 +3,6 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const doctorSchema = new Schema ({
-    doctorId: { type: String, required: [true, 'Doctor ID is required'] },
     name: { type: String, required: [true, 'Name is required'] },
     login: { type: String, required: [true, 'Login is required'], unique: true },
     password: { type: String, required: [true, 'Password is required'] },
@@ -13,7 +12,6 @@ const doctorSchema = new Schema ({
     phone: { type: String, required: [true, 'Phone is required']},
     createdAt: { type: Date, default: Date.now },
 });
-
 
 const doctor = mongoose.model('doctor', doctorSchema);
 

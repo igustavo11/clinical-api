@@ -1,5 +1,5 @@
 import  express  from "express";
-import appointmentsService from "../services/appointmentService.ts";
+import appointmentsService from "../services/appointmentService";
 
 let router = express.Router();
 
